@@ -292,22 +292,22 @@ footer:hover{
 .hobbies-container{
     margin-top: 150px;
     position: relative;
-    background-image: url(gitara.jpg);
+/*     background-image: url(gitara.jpg); */
 }
 .hobbies-container1{
     margin-top: 70px;
     position: relative;
-    background-image: url(gitara.jpg);
+/*     background-image: url(gitara.jpg); */
 }
 .hobbies-container2{
     margin-top: 150px;
     position: relative;
-    background-image: url(gitara.jpg);
+/*     background-image: url(gitara.jpg); */
 }
 .hobbies-container3{
     margin-top: 150px;
     position: relative;
-    background-image: url(gitara.jpg);
+/*     background-image: url(gitara.jpg); */
 }
 .hobbies-content {
     display: none;
