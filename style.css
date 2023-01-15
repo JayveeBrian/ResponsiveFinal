@@ -1,0 +1,999 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+/* .hero{
+    height: auto;
+    width: 100vw;
+    background-image: url(/images/gitara.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+} */
+body{
+    height: 100vh;
+    width: auto;
+    background-image: url(/images/gitara.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+
+.hamburger{
+    display: none;
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.2s;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: darkgray;
+}
+.nav-bar ul li a.active{
+    color: black;
+    background: darkgray;
+}   
+
+
+@media only screen and (max-width: 1320px){
+  header{
+    padding: 0 50px;
+  }
+  .personal-container{
+    padding: 0 50px;
+  }
+
+} 
+@media only screen and (max-width: 1100px){
+    header{
+      padding: 0 30px;
+    }
+    .personal-container{
+        padding: 0 30px;
+      }
+  
+  }
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+        margin-top: 5px;
+    }
+    .nav-bar{
+        height: 0;
+       position: absolute;
+       top: 80px;
+       left: 0;
+       right: 0;
+       width: 100vw;
+       background-color: black;
+       transition: 0.2s;
+       overflow: hidden;
+
+    } 
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul{
+       display: block;
+       width: fit-content;
+       margin: 80px auto 0 auto;
+       text-align: center;
+       transition: 0.5s;
+       opacity: 0;
+
+    } 
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+       margin-bottom: 12px;
+       color: red;
+ 
+    } 
+  }
+
+#hello{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    font-weight: bold;
+    
+}
+
+.jayvee{
+    color: white;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 120px;
+}
+.animation{
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+.animation > div >div {
+    padding: 0px 1.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+    border-radius: 10px;
+} 
+
+
+.animation div:first-child{
+    animation: text-animation 8s infinite;
+}
+.first div {
+    background-color:#20a7d8;
+  }
+.second div {
+    background-color:#CD921E;
+}
+.third div {
+    background-color:#c10528;
+
+}
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+}
+@keyframes button {
+    0%   {background-color: red;}
+    25%  {background-color: orange;}
+    50%  {background-color: skyblue;}
+    100% {background-color: black;}
+  }
+.jayvee h1{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;  
+}
+.jayvee h1:hover{
+    color: red;
+}
+.jayvee h3{
+    color: darkgrey;
+   
+}
+.jayvee p:hover{
+    color: #ea1538;
+}
+.jayvee h3:hover{
+    color: #ea1538;
+}
+.follow{
+    color: white;
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    margin-top: 190px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.follow:hover{
+    color:#ea1538;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    height: 150px;
+}
+.footer-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    height: 150px;
+    
+}
+.footer-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    height: 150px;
+    
+}
+.footer-container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    height: 150px;
+    
+}
+.fa-facebook{
+    color: white;
+    font-size: 40px;
+    transition: transform .3s;
+}
+.fa-instagram{
+    color: white;
+    font-size: 40px;
+    transition: transform .3s;    
+}
+.fa-youtube{
+    color: #ea1538;
+    font-size: 40px;
+    transition: transform .3s;
+}
+.fa-tiktok{
+    color: #ea1538;
+    font-size: 40px;
+    transition: transform .3s;
+}
+.fa-facebook:hover{
+    transform: scale(1.5);
+}
+.fa-instagram:hover{
+    transform: scale(1.5);
+}
+.fa-youtube:hover{
+    transform: scale(1.5);
+}
+.fa-tiktok:hover{
+    transform: scale(1.5);
+}
+
+footer:hover{
+    color: #ea1538;
+}
+
+/* Hobbies */
+
+.hobbies-container{
+    margin-top: 150px;
+    position: relative;
+    background-image: url(/images/gitara.jpg);
+}
+.hobbies-container1{
+    margin-top: 70px;
+    position: relative;
+    background-image: url(/images/gitara.jpg);
+}
+.hobbies-container2{
+    margin-top: 150px;
+    position: relative;
+    background-image: url(/images/gitara.jpg);
+}
+.hobbies-container3{
+    margin-top: 150px;
+    position: relative;
+    background-image: url(/images/gitara.jpg);
+}
+.hobbies-content {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 20px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 100px;
+}
+.next {
+    position: absolute;
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+}
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    font-size: 0;
+    
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.jayvee1 h1 {
+    font-size: 40px;
+    color: darkgray;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.jayvee1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.jayvee1 p{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.jayvee1 p:hover{
+    color: white;
+}
+.follow1{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    font-size: 30px;
+}
+.follow2{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.follow3{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.follow4{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.footer1{
+    padding-top: 0px;
+    height: 200px;
+}
+#span1{
+    color: #ea1538;
+}
+.follow1:hover{
+    color: #ea1538;
+}
+
+/* Habits */
+.jayvee2 h1 {
+    font-size: 40px;
+    color: darkgray;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.jayvee2{
+    color: white;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.jayvee2 p{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.jayvee2 p:hover{
+    color: white;
+}
+.follow2{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    padding-left: 25px;
+    padding-top: 160px;
+    font-size: 30px;
+}
+.footer2{
+    padding-top: 0px;
+    height: 200px;
+}
+#span2{
+    color: #ea1538;
+}
+.follow2:hover{
+    color: #ea1538;
+}
+
+/* ambition */
+.jayvee3 h1 {
+    font-size: 40px;
+    color: darkgray;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.jayvee3{
+    color: white;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+.jayvee3 p{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+
+}
+.jayvee3 p:hover{
+    color: white;
+}
+.follow3{
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+    padding-left: 25px;
+    padding-top: 160px;
+    font-size: 30px;
+}
+.footer3{
+    height: 200px;
+}
+
+
+.follow3:hover{
+    color: #ea1538;
+}
+
+/* infos */
+div > img{
+    width: 300px;
+    margin-top: 100px;
+    border-radius: 30px;
+    border-start-start-radius: 30px;
+}
+.personal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 20px ;
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    color: white;
+}
+
+
+
+
+
+
+  
+@media  only screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+        height: auto;
+    }
+    .infos-container {
+        display: block;
+    }
+     .image{  
+       margin-left: 150px;
+       margin-right: 250px;
+    }
+    .follow{
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    .follow1{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .follow2{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .follow4{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .follow3{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .footer-container{
+        gap: 20px;
+        font-size: 20px;
+        
+    }
+    .footer-container2{
+        gap: 20px;
+        font-size: 20px;
+        
+    }
+    .footer-container4{
+        gap: 20px;
+        font-size: 20px;
+    }
+    .hobbies-container{
+        margin-top: 10%;
+        font-size: 15px;
+    }
+    .hobbies-container1{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .hobbies-container2{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .jayvee{
+        font-size: 25px;
+        margin-top: 25%;
+        margin-bottom: 0%;
+    }
+    .paragraph-content{
+        text-align: center;
+        padding-right: 100px;
+        
+        
+    }
+    p.paragraph-content{
+        font-size: 15px;
+    }
+    .footer-container1{
+        gap: 20px;
+        
+    }
+    .footer-container4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+   .personal-container{
+    display: block;
+    padding: 0 20px;
+   }
+   .photo{
+    width: 250px;
+    margin-left: 40px;
+   }
+    
+   
+} 
+
+@media only screen and (min-width: 600px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .jayvee {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .footer-container{
+        gap: 20px;
+        
+    }
+    .footer-container1{
+        gap: 20px;
+        
+    }
+    .footer-container2{
+        gap: 20px;
+        
+    }
+    .follow1{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .jayvee{
+        margin-top: 30px;
+    }
+    .hobbies-container2{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .follow2{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .follow3{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+
+   div img{
+    margin-left: 100px;
+   }
+   
+
+    .follow4{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 45px;
+    }
+    .footer-container4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .hobbies-container3{
+        margin-top: 100px;
+        font-size: 15px;
+
+    }
+    .footer-container3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .infos-container{
+        display: block;
+      }
+    .image{  
+        margin-left: 250px;
+        margin-top: 0;
+        margin-bottom: 5%;
+        
+    }
+    .paragraph-content{
+        text-align: center;
+        padding-right: 100px;
+    }
+    .footer-container{
+        gap: 40px;
+      
+    }
+    .follow4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .hobbies-container{
+        margin-top: 50px;
+        padding-top: 0;
+    }
+    .hobbies-container3{
+        margin-top: 100px;
+        font-size: 15px;
+
+    }
+    .footer-container3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+}
+   
+@media only screen and (min-width: 768px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .infos-container{
+    display: block;
+  }
+  .image{  
+    /* margin-left: 100px; */
+    margin-top: 0;
+    margin-bottom: 5%;
+    
+}
+.paragraph-content{
+    text-align: center;
+    padding-right: 100px;
+}
+.footer-container{
+    gap: 40px;
+  
+}
+.follow{
+    margin-top: 150px;
+    font-size: 20px;
+}
+.hobbies-container1{
+    margin-top: 50px;
+    padding-top: 0;
+}
+.hobbies-container2{
+    margin-top: 150px;
+    padding-top: 0;
+}
+.hobbies-container3{
+    margin-top: 150px;
+    font-size: 15px;
+
+}
+.footer-container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 150px;
+    
+}
+}
+@media only screen and (min-width: 992px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+      .image{  
+       margin-top: 20px;
+    }
+    .follow{
+        margin-top: 20px;
+    }
+    .hobbies-container3{
+        margin-top: 100px;
+        font-size: 15px;
+
+    }
+    .footer-container3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .jayvee{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    div img{
+        margin-left: 35px;
+        width: 150px;
+    }
+    .text{
+        font-size: 15px;
+        padding-top: 90px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .follow{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .jayvee{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 200px; */
+        padding-top: 100px;
+    }
+    .hobbies-container1{
+        margin-top: 100px;
+    }
+    .footer-container3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .infos-container{
+        display: flex;
+    }
+    .follow{
+        margin-top: 200px;
+    }
+    .jayvee{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    div img{
+        margin-left: 75px;
+        width: 200px;
+    }
+    /* .paragraph-content{
+        display: flex;
+        font-size: 20px;
+
+    } */
+    .jayvee4{
+        font-size: 20px;
+    }
+    .hobbies-container1{
+        margin-top: 150px;
+        font-size: 15px;
+    }
+
+    .footer-container1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .footer-container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .follow1{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .follow2{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    .follow3{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    .follow4{
+        font-size: 20px;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    .hobbies-container{
+        margin-top: 150px;
+        font-size: 15px;
+
+    }
+    .hobbies-container2{
+        margin-top: 150px;
+        font-size: 15px;
+
+    }
+    .hobbies-container3{
+        margin-top: 150px;
+        font-size: 15px;
+
+    }
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 77px;
+        
+    }
+    .footer-container3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+    .footer-container4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 150px;
+        
+    }
+}
+
+    
+
+
+
+
+
+

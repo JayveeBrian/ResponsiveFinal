@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cf8a29f44.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9cf8a29f44.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <li><a href="/index.html" class="logo">ジェイビー</a></li>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar active">
+            <ul>
+                <li><a href="/hobbies.html" class="active">Hobbies</a></li>
+                <li><a href="/habits.html">FaveHabits</a></li>
+                <li><a href="/ambition.html">Ambitions</a></li>
+                <li><a href="/infos.html">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+        <div class="personal-container">
+            <div>
+              <img src="/images/school.jpg" class="photo">
+            </div>
+            <div class="text">
+                <p>
+                    <span>Good to know:</span> I am optimistic and friendly person.<br>
+                    <span>Motto:</span> If you promise certain thing, you must to fullfil that. <br>
+                    <span>COURSE:</span> ASSOCIATE IN COMPUTER TECHNOLOGY <br>
+                    <span>SCHOOL:</span> LA VERDAD CHRISTIAN COLLEGE <br>
+                    <span>Email:</span> jayveebriani@gmail.com<br>
+                </p>
+            </div>
+        </div>
+    
+        <div>
+            <h3 class="follow4">@Follow and Message me on</h3>
+        </div>
+
+        <div class="footer-container4">
+            <a href="https://web.facebook.com/jayvee.brian.96"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jeibyyy_briiaan/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC8fgZ8evigLqoGjF9zvcL0A"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@jayveebrian7"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+   
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

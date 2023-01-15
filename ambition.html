@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cf8a29f44.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9cf8a29f44.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <li><a href="/index.html" class="logo">ジェイビー</a></li>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar active">
+            <ul>
+                <li><a href="/hobbies.html" class="active">Hobbies</a></li>
+                <li><a href="/habits.html">FaveHabits</a></li>
+                <li><a href="/ambition.html">Ambitions</a></li>
+                <li><a href="/infos.html">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="hobbies-container3">
+            <div class="hobbies-content">
+                <p>CYBERSECURITY</p>
+                <p>I want to become a CYBERSECURITY in a specific purpose its because I want try to protect the systems in my own tactics.</p>
+            </div>
+
+            <div class="hobbies-content">
+                <p>JUNIOR DEVELOPER</p>
+                <p>I want to become a Junior Developer its because I want to build a simple software with my own idea.</p>
+            </div>
+
+            <div class="hobbies-content">
+                <p>NETWORK SUPPORT SPECIALIST</p>
+                <p>I want to become a NETWORK SPECIALIST its because I want to discover more about the use of Networks in our daily lives.</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div>
+            <h3 class="follow3">@Follow and Message me on</h3>
+        </div>
+
+        <div class="footer-container3">
+            <a href="https://web.facebook.com/jayvee.brian.96"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jeibyyy_briiaan/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC8fgZ8evigLqoGjF9zvcL0A"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@jayveebrian7"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
