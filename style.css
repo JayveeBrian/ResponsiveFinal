@@ -608,6 +608,12 @@ div > img{
     width: 250px;
     margin-left: 40px;
    }
+    .prev{
+        display: none;
+    }
+    .next{
+        right: 2px
+    }
     
    
 } 
