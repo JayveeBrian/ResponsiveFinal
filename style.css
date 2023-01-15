@@ -17,7 +17,7 @@
 body{
     height: 100vh;
     width: auto;
-    background-image: url(/images/gitara.jpg);
+    background-image: url(gitara.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
